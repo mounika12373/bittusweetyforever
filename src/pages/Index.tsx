@@ -135,9 +135,9 @@ const Index = () => {
   };
 
   const scrollToStory = () => {
-    startMusic();
-    document.getElementById("our-story")?.scrollIntoView({ behavior: "smooth" });
-  };
+  startMusic();
+  document.getElementById("intro")?.scrollIntoView({ behavior: "smooth" });
+};
 
   return (
     <div className="relative min-h-screen overflow-x-hidden">
@@ -154,7 +154,7 @@ const Index = () => {
       </button>
 
       {/* === HERO SECTION === */}
-      <section className="relative min-h-screen flex items-center justify-center gradient-hero overflow-hidden">
+      <section id="intro" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Sparkles />
         <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
           <motion.div
@@ -348,14 +348,54 @@ const Index = () => {
             <div className="bg-background rounded-3xl p-8 sm:p-12 shadow-xl border border-border">
               <div className="font-script text-xl sm:text-2xl text-foreground leading-relaxed space-y-6">
                 <p>Sweety,</p>
-                <p>You are not just my girlfriend.<br />You are my peace, my comfort, my happiness.</p>
-                <p>Hyderabad gave me friendship.<br />Vizag taught me distance.<br />But you taught me what forever feels like.</p>
-                <p>No matter where life takes us — whether it's busy cities, quiet nights, or new beginnings — my favorite place will always be next to you.</p>
-                <p className="mt-8">
-                  Forever yours,<br />
-                  <span className="text-primary font-bold">Your Bittu ❤️</span><br />
-                  — Sriram
-                </p>
+
+<p>
+You are not just my girlfriend.<br />
+You are my calm in chaos, my comfort in silence, my happiness in its purest form.
+</p>
+
+<p>
+What started in Hyderabad as friendship — shared laughs, silly jokes, and food that somehow tasted better together — slowly became the most beautiful love story of my life.
+</p>
+
+<p>
+Vizag taught me what distance feels like.<br />
+But loving you taught me what forever feels like.
+</p>
+
+<p>
+Even when miles stood between us, my heart never felt far from you.<br />
+Because no matter where I am, I carry you within me — in my thoughts, in my dreams, in every plan I make for the future.
+</p>
+
+<p>
+I don’t just imagine trips and memories with you.<br />
+I imagine waking up next to you for the rest of my life.<br />
+I imagine building a home filled with laughter.<br />
+I imagine little footsteps running around.<br />
+I imagine growing old with you… still calling you “Sweety”… still being your Bittu.
+</p>
+
+<p>
+No matter where life takes us — busy cities, quiet nights, new beginnings — my favorite place will always be next to you.
+</p>
+
+<p className="mt-6 font-semibold">
+And today, with all the love in my heart…
+</p>
+
+<p className="text-primary font-bold text-center text-2xl animate-pulse">
+Will you become Mounika Patnayakuni someday…
+<br />
+and build this forever with your Bittu?
+</p>
+
+<p className="mt-8">
+Forever yours,<br />
+<span className="text-primary font-bold">Your Bittu ❤️</span><br />
+— Sriram
+</p>
+
               </div>
             </div>
           </Section>
