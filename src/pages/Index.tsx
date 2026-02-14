@@ -183,6 +183,55 @@ const Index = () => {
         </div>
       </section>
 
+      {/* === CINEMATIC INTRO SECTION === */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background image with blur overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/proposal-moment.jpeg"
+            alt="Our beautiful moment"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-foreground/40 backdrop-blur-sm" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-transparent to-primary/20" />
+        </div>
+        <Sparkles />
+        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+          <Section>
+            <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif-display font-bold text-primary-foreground mb-6">
+              Sweety…
+            </h2>
+            <p className="text-lg sm:text-2xl text-primary-foreground/90 font-serif-display italic mb-12 leading-relaxed">
+              Before we relive our story… there's something I want to ask you.
+            </p>
+            <div className="rounded-3xl overflow-hidden shadow-2xl border-2 border-primary/30 max-w-lg mx-auto mb-12">
+              <img
+                src="/images/proposal-moment.jpeg"
+                alt="Our romantic moment together"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="space-y-2 mb-12">
+              <p className="text-xl sm:text-2xl text-primary-foreground font-serif-display leading-relaxed">
+                From friendship to forever…
+              </p>
+              <p className="text-xl sm:text-2xl text-primary-foreground font-serif-display leading-relaxed">
+                From Hyderabad memories to future dreams…
+              </p>
+              <p className="text-xl sm:text-2xl text-primary-foreground font-serif-display font-semibold leading-relaxed mt-4">
+                Will you build this life with your Bittu?
+              </p>
+            </div>
+            <button
+              onClick={() => document.getElementById("our-story")?.scrollIntoView({ behavior: "smooth" })}
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-medium text-lg animate-pulse-glow hover:scale-105 transition-transform duration-300"
+            >
+              Scroll to Our Story ❤️
+            </button>
+          </Section>
+        </div>
+      </section>
+
       {/* === OUR STORY TIMELINE === */}
       <section id="our-story" className="py-24 sm:py-32 px-6 bg-card">
         <div className="max-w-3xl mx-auto">
